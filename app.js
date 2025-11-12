@@ -6,19 +6,19 @@ function isAdult(age) {
     return "Minor";
   }
 }
-console.log(isAdult(17));
+console.log("Exercise 2:", isAdult(17));
 
 // Exercise 4:
 function generateEmail(name, domain) { 
   return `${name}@${domain}`
 }
-console.log(generateEmail("mahoozi97", "icloud.com"))
+console.log("Exercise 4:", generateEmail("mahoozi97", "icloud.com"))
 
 // Exercise 5:
 function greetUser(name, greeting) {
   return `Good ${greeting}, ${name}`
 }
-console.log(greetUser("Ali", "evening"))
+console.log("Exercise 5:", greetUser("Ali", "evening"))
 
 // Exercise 6: 
 function maxOfThree(first, second, third) {
@@ -30,25 +30,31 @@ function maxOfThree(first, second, third) {
     return third
   }
 }
-console.log(maxOfThree(5, 3, 4))
-console.log(maxOfThree(5, 6, 4))
-console.log(maxOfThree(5, 3, 8))
+console.log("Exercise 6:", maxOfThree(5, 3, 4))
+console.log("Exercise 6:", maxOfThree(5, 6, 4))
+console.log("Exercise 6:", maxOfThree(5, 3, 8))
+
+// Exercise 7:
+function calculateTip(amount, percentage) {
+  return amount * (percentage / 100)
+}
+console.log("Exercise 7:", calculateTip(50, 20))
 
 // Exercise 10: calculateGrade()
 function calculateGrade(numricalScore) {
   if (numricalScore == 90) {
-    console.log("A");
+    return "A";
   } else if (numricalScore > 87 && numricalScore < 90) {
-    console.log("B");
+    return "B";
   } else if (numricalScore > 69 && numricalScore < 80) {
-    console.log("C");
+    return "C";
   } else if (numricalScore > 59 && numricalScore < 70) {
-    console.log("D");
+    return "D";
   } else if (numricalScore < 60) {
-    console.log("f");
+    return "F";
   }
 }
-calculateGrade(66);
+console.log("Exercise 10:", calculateGrade(66))
 
 // Exercise 11: createUsername()
 function createUsername(firstname, lastname) {
@@ -56,6 +62,6 @@ function createUsername(firstname, lastname) {
   const last = lastname.slice(0, 3);
   const nameLength = firstname.length + lastname.length;
   const username = first + last;
-  console.log(`${username}${nameLength}`);
+  return `${username}${nameLength}`
 }
-createUsername("Ali", "Hasan");
+console.log("Exercise 11:", createUsername("Ali", "Hasan"))
