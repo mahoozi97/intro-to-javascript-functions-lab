@@ -1,3 +1,15 @@
+// To Do
+let color = "SyntaxError";
+if (color === "red") {
+  console.log("Stop");
+} else if (color === "yellow") {
+  console.log("Slow");
+} else if (color === "green") {
+  console.log("Go");
+} else {
+  console.log("SyntaxError");
+}
+
 // Excercise2:
 function isAdult(age) {
   if (age >= 18) {
@@ -9,36 +21,36 @@ function isAdult(age) {
 console.log("Exercise 2:", isAdult(17));
 
 // Exercise 4:
-function generateEmail(name, domain) { 
-  return `${name}@${domain}`
+function generateEmail(name, domain) {
+  return `${name}@${domain}`;
 }
-console.log("Exercise 4:", generateEmail("mahoozi97", "icloud.com"))
+console.log("Exercise 4:", generateEmail("mahoozi97", "icloud.com"));
 
 // Exercise 5:
 function greetUser(name, greeting) {
-  return `Good ${greeting}, ${name}`
+  return `Good ${greeting}, ${name}`;
 }
-console.log("Exercise 5:", greetUser("Ali", "evening"))
+console.log("Exercise 5:", greetUser("Ali", "evening"));
 
-// Exercise 6: 
+// Exercise 6:
 function maxOfThree(first, second, third) {
   if (first > second && first > third) {
-    return first
+    return first;
   } else if (second > first && second > third) {
-    return second
+    return second;
   } else if (third > first && third > second) {
-    return third
+    return third;
   }
 }
-console.log("Exercise 6:", maxOfThree(5, 3, 4))
-console.log("Exercise 6:", maxOfThree(5, 6, 4))
-console.log("Exercise 6:", maxOfThree(5, 3, 8))
+console.log("Exercise 6:", maxOfThree(5, 3, 4));
+console.log("Exercise 6:", maxOfThree(5, 6, 4));
+console.log("Exercise 6:", maxOfThree(5, 3, 8));
 
 // Exercise 7:
 function calculateTip(amount, percentage) {
-  return amount * (percentage / 100)
+  return amount * (percentage / 100);
 }
-console.log("Exercise 7:", calculateTip(50, 20))
+console.log("Exercise 7:", calculateTip(50, 20));
 
 // Exercise 10: calculateGrade()
 function calculateGrade(numricalScore) {
@@ -54,7 +66,7 @@ function calculateGrade(numricalScore) {
     return "F";
   }
 }
-console.log("Exercise 10:", calculateGrade(66))
+console.log("Exercise 10:", calculateGrade(66));
 
 // Exercise 11: createUsername()
 function createUsername(firstname, lastname) {
@@ -62,6 +74,6 @@ function createUsername(firstname, lastname) {
   const last = lastname.slice(0, 3);
   const nameLength = firstname.length + lastname.length;
   const username = first + last;
-  return `${username}${nameLength}`
+  return `${username}${nameLength}`;
 }
-console.log("Exercise 11:", createUsername("Ali", "Hasan"))
+console.log("Exercise 11:", createUsername("Ali", "Hasan"));
