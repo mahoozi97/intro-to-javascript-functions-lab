@@ -52,6 +52,31 @@ function calculateTip(amount, percentage) {
 }
 console.log("Exercise 7:", calculateTip(50, 20));
 
+// Exercise 8:
+function convertTemperature(temperature, scale) {
+  if (scale === "c") {
+    let result = (temperature * 9) / 5 + 32;
+    return result;
+  } else if (scale === "f") {
+    let result = ((temperature - 32) * 5) / 9;
+  }
+}
+console.log("Exercise 8:", convertTemperature(0, "c"));
+
+// Exercise 9:
+function basicCalculator(num1, num2, operation ) {
+  if (operation === "add") {
+    return num1 + num2
+  } else if (operation === "subtract") {
+    return num1 - num2
+  } else if (operation === "multiply") {
+    return num1 * num2
+  } else if (operation === "divide") {
+    return num1 / num2
+  } 
+}
+console.log("Exercise 9:", basicCalculator(5, 4, "add"))
+
 // Exercise 10: calculateGrade()
 function calculateGrade(numricalScore) {
   if (numricalScore == 90) {
