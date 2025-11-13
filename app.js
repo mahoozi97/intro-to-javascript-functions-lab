@@ -20,6 +20,17 @@ function isAdult(age) {
 }
 console.log("Exercise 2:", isAdult(17));
 
+// Exercise 3:
+function isCharAVowel(letter) {
+  const vowelLetters = ["a", "e", "i", "o", "u"]
+  if (vowelLetters.includes(letter)) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log("Exercise 3:", isCharAVowel("a"))
+
 // Exercise 4:
 function generateEmail(name, domain) {
   return `${name}@${domain}`;
@@ -79,7 +90,7 @@ console.log("Exercise 9:", basicCalculator(5, 4, "add"));
 
 // Exercise 10: calculateGrade()
 function calculateGrade(numricalScore) {
-  if (numricalScore == 90) {
+  if (numricalScore === 90) {
     return "A";
   } else if (numricalScore > 87 && numricalScore < 90) {
     return "B";
