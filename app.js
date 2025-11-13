@@ -24,7 +24,7 @@ console.log("Exercise 2:", isAdult(17));
 function generateEmail(name, domain) {
   return `${name}@${domain}`;
 }
-console.log("Exercise 4:", generateEmail("mahoozi97", "icloud.com"));
+console.log("Exercise 4:", generateEmail("ali-mirza", "icloud.com"));
 
 // Exercise 5:
 function greetUser(name, greeting) {
@@ -64,18 +64,18 @@ function convertTemperature(temperature, scale) {
 console.log("Exercise 8:", convertTemperature(0, "c"));
 
 // Exercise 9:
-function basicCalculator(num1, num2, operation ) {
+function basicCalculator(num1, num2, operation) {
   if (operation === "add") {
-    return num1 + num2
+    return num1 + num2;
   } else if (operation === "subtract") {
-    return num1 - num2
+    return num1 - num2;
   } else if (operation === "multiply") {
-    return num1 * num2
+    return num1 * num2;
   } else if (operation === "divide") {
-    return num1 / num2
-  } 
+    return num1 / num2;
+  }
 }
-console.log("Exercise 9:", basicCalculator(5, 4, "add"))
+console.log("Exercise 9:", basicCalculator(5, 4, "add"));
 
 // Exercise 10: calculateGrade()
 function calculateGrade(numricalScore) {
@@ -101,4 +101,4 @@ function createUsername(firstname, lastname) {
   const username = first + last;
   return `${username}${nameLength}`;
 }
-console.log("Exercise 11:", createUsername("Ali", "Hasan"));
+console.log("Exercise 11:", createUsername("Osama", "Hasan"));
