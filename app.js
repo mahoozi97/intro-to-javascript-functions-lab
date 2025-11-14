@@ -22,14 +22,14 @@ console.log("Exercise 2:", isAdult(17));
 
 // Exercise 3:
 function isCharAVowel(letter) {
-  const vowelLetters = ["a", "e", "i", "o", "u"]
+  const vowelLetters = ["a", "e", "i", "o", "u"];
   if (vowelLetters.includes(letter)) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
-console.log("Exercise 3:", isCharAVowel("a"))
+console.log("Exercise 3:", isCharAVowel("a"));
 
 // Exercise 4:
 function generateEmail(name, domain) {
